@@ -1,0 +1,35 @@
+def removeAdjDup(str):
+
+ char = list(str)
+ 
+ prev = char[0]
+ 
+ k = 0
+ 
+ i = 1
+
+ while i<len(char):
+ 
+ if prev is not char[i]:
+ 
+ k = k+1
+ char[k] = char[i]
+ i = i+1
+ prev = char[k]
+
+ else:
+ 
+  while i<len(char)and rev ==char[i]:
+  i = i+1
+
+  k = k-1
+  prev = chars[k]
+
+ return'''.join(chars[k+1])
+
+ if_name_=='__main__':
+
+ str = "abbaca"
+
+ str = removeAdjDup(str)
+ print("the string left after the removeal of all adjacent duplicates is",srt)
